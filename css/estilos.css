@@ -1,4 +1,4 @@
-* {
+*{
   padding: 0px;
   margin: 0px;
   font-family: Century Gothic; }
@@ -53,7 +53,7 @@ header {
 .navegacion__menu li a {
   text-decoration: none;
   display: block;
-  color: rgba(245, 245, 220, 0.541); }
+  color:  rgb(156, 155, 153); }
 
 .navegacion__menu li :hover, li.active {
   background-color: rgba(148, 147, 147, 0.473);
@@ -61,7 +61,7 @@ header {
 
 .hide {
   background-color: rgba(7, 7, 7, 0);
-  color: rgba(245, 245, 220, 0.541);
+  color:  rgb(156, 155, 153);
   cursor: pointer;
   display: none; }
 
@@ -88,15 +88,45 @@ h2 {
 .index__main {
   height: 350px; }
 
+
+
 main {
   height: 450px; }
 
+.main__contactanos{
+  height:70vh
+
+}
+
 .main__sistemas {
-  height: 50rem; }
+  height: 55rem; }
 
 .boton {
-  border-radius: solid 2px black;
-  color: #141313; }
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid #212529;
+    background: #212529;
+  }
+  .css-button-sharp--black:hover {
+    background: #fff;
+    color: #212529
+  }
+  
+  .css-button-gradient--2:hover {
+    background-position: right center;
+  }
+  .css-button-gradient--2:active {
+    top: 2px;
+  }
+
 
 /* footer */
 footer {
@@ -131,6 +161,7 @@ footer {
 /* media quaries */
 @media (min-width: 320px) and (max-width: 540px) {
   header {
+    
     flex-direction: column;
     justify-content: center; }
   footer {
@@ -138,12 +169,16 @@ footer {
   .navegacion__menu {
     flex-direction: column; }
   .navegacion {
-    height: 10rem;
+    height: 15rem;
     text-align: center; }
   .title {
     padding-top: 2rem; }
   .redes__1 {
-    padding-top: 2rem; } }
+    padding-top: 2rem; } 
+  .main__sistemas{ 
+    height: 100rem }
+  }
+  
 
 @media (min-width: 541px) and (max-width: 774px) {
   header {
@@ -170,7 +205,7 @@ footer {
   grid-template-rows: repeat(2, auto); }
 
 .hijo__1, .hijo__2 {
-  background-color: #9c9b99;
+  background-color: #5b5a5c52;
   padding: 2rem;
   border-radius: 1rem; }
 

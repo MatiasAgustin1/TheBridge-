@@ -1,15 +1,15 @@
 @import 'variables';
 @import 'header';
-
-*{
+@import 'sasscript'
+/* 
     padding: 0px;
     margin: 0px;
     font-family: Century Gothic ; 
 
-}
+
 /* fondo de la pagina */
 .fondo{
-    background-image: url(../recursos/fondo2.jpg);
+    background-image: url/../recursos/fondo2.jpg/;
     background-size: cover;
 }
 .back{
@@ -63,7 +63,7 @@ header{
 .navegacion__menu li a {
     text-decoration: none;
     display: block  ;
-    color: rgba(245, 245, 220, 0.541);
+    color:  rgb(156, 155, 153);
 } 
 
 .navegacion__menu li :hover, li.active {
@@ -73,7 +73,7 @@ header{
     }
 .hide{
     background-color: rgba(7, 7, 7, 0);
-    color: rgba(245, 245, 220, 0.541);
+    color:  rgb(156, 155, 153);
     cursor: pointer;
     display:none
 }
@@ -130,6 +130,9 @@ footer{
     margin-top: 4rem;
     text-align: center;
     color: white;
+}
+.titulo_proyectos{
+    color: black 
 }
 .title{
     padding-top: 1rem;
