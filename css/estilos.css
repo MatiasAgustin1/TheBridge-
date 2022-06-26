@@ -98,6 +98,28 @@ main {
 
 }
 
+.gallery-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 140px;
+    padding:20px;
+    grid-gap: 10px
+}
+.gallery__img {
+  width: 100%; 
+  height: 100%;
+  /* object-fit: cover; */
+}
+.gallery__item:nth-child(1){
+  grid-row-start: span 2;
+}
+.gallery__item:nth-child(2){
+  grid-row-start: span 2;
+}
+.gallery__item:nth-child(3){
+  grid-row-start: span 2;
+}
+
 .main__sistemas {
   height: 55rem; }
 
@@ -161,7 +183,6 @@ footer {
 /* media quaries */
 @media (min-width: 320px) and (max-width: 540px) {
   header {
-    
     flex-direction: column;
     justify-content: center; }
   footer {
@@ -176,23 +197,34 @@ footer {
   .redes__1 {
     padding-top: 2rem; } 
   .main__sistemas{ 
-    height: 100rem }
+    height: 130rem }
+  .main__proyectos{
+    height:50rem;
+  }
   }
   
 
-@media (min-width: 541px) and (max-width: 774px) {
+@media (min-width: 541px) and (max-width: 1014px) {
   header {
     flex-direction: column;
     justify-content: center; }
   .navegacion__menu {
     flex-direction: column; }
   .navegacion {
-    height: 10rem;
+    height: 15rem;
     text-align: center; }
   .title {
     padding-top: 2rem; }
   .redes__1 {
-    padding-top: 2rem; } }
+    padding-top: 2rem; } 
+  .main__proyectos{
+    height:42rem
+  }
+  .main__sistemas{
+    height:110rem
+  }
+
+}
 
 /* sobre nosotros */
 .contenedor {

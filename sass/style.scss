@@ -1,4 +1,4 @@
-@import 'variables';
+
 @import 'header';
 @import 'sasscript'
 /* 
@@ -9,7 +9,7 @@
 
 /* fondo de la pagina */
 .fondo{
-    background-image: url/../recursos/fondo2.jpg/;
+    background-image: url(../recursos/fondo2.jpg);
     background-size: cover;
 }
 .back{
@@ -117,6 +117,9 @@ main{
     color: rgb(20, 19, 19);
 
     
+}
+.main-contactanos{
+
 }
 
 /* footer */
