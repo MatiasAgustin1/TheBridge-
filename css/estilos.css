@@ -91,11 +91,14 @@ h2 {
 
 
 main {
-  height: 450px; }
+  height: 45rem; }
 
 .main__contactanos{
   height:70vh
 
+}
+.main__proyectos { 
+  height:45rem;
 }
 
 .gallery-container {
